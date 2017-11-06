@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Wardrobe_MVC.Models.Combination>
+
+@{
+    ViewBag.Title = "Combination";
+}
+
+<h2>Combination</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@*Foreach Loop that adds thumbnails*@
+@foreach (var item in Model) {
+        <div class="row rowitems" style="color:white">
+            <div class="col-md-3">
+                <div class="combination">
+                    <div class="caption">
+                        <h3>@Html.DisplayFor(modelItem => item.Accessory.Name)</h3>
+                        <img class="homePic" src="@Html.DisplayFor(modelItem => item.Accessory.Photo)" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="combination">
+                    <div class="caption">
+                        <h3>@Html.DisplayFor(modelItem => item.Top.Name)</h3>
+                        <img class="homePic" src="@Html.DisplayFor(modelItem => item.Top.Photo)" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="combination">
+                    <div class="caption">
+                        <h3>@Html.DisplayFor(modelItem => item.Bottom.Name)</h3>
+                        <img class="homePic" src="@Html.DisplayFor(modelItem => item.Bottom.Photo)" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="combination">
+                    <div class="caption">
+                        <h3>@Html.DisplayFor(modelItem => item.Shoe.Name)</h3>
+                        <img class="homePic" src="@Html.DisplayFor(modelItem => item.Shoe.Photo)" />
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CombinationID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CombinationID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CombinationID })
+        </p>
+}
+
+

@@ -1,0 +1,48 @@
+﻿@model Wardrobe_MVC.Models.Combination
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Combination</h4>
+    <hr />
+   
+        <h3>
+            @Html.DisplayNameFor(model => model.Accessory.Name)
+        </h3>
+
+        <p>
+            @Html.DisplayFor(model => model.Accessory.Name)
+        </p>
+
+        <h3>
+            @Html.DisplayNameFor(model => model.Bottom.Name)
+        </h3>
+
+        <p>
+            @Html.DisplayFor(model => model.Bottom.Name)
+        </p>
+
+        <h3>
+            @Html.DisplayNameFor(model => model.Shoe.Name)
+        </h3>
+
+        <p>
+            @Html.DisplayFor(model => model.Shoe.Name)
+        </p>
+
+        <h3>
+            @Html.DisplayNameFor(model => model.Top.Name)
+        </h3>
+
+        <p>
+            @Html.DisplayFor(model => model.Top.Name)
+        </p>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CombinationID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

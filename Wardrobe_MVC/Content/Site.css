@@ -1,8 +1,69 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color:#2A2E26;
+    color:white;
+}
+  
+/*Jumbotron Styling*/
+.jumbotron {
+    background-image: url('Images/CBRBanner.PNG');
+    background-size: cover;
+    height: 300px;
 }
 
+/*Thumbnail Styling*/
+.thumbnail{
+    height:300px;
+} 
+a {
+    color:#C31E30;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Navbar Styling*/
+.navbar-inverse{
+    color:white;
+}
+
+.navbar-inverse .navbar-brand{
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+   color: white;
+   font-family: 'Open Sans', sans-serif;
+}
+
+/*Picture Styling*/
+.picture {
+    width: 330px;
+    height: 186px;
+}
+
+.homePic{
+    width: 260px;
+    height: 186px;
+}
+
+/*Font Styling*/
+h3{
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Carousel Styling*/
+.myCarousel{
+    height:280px;
+}
+.row rowitems{
+    background-color: gray;
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
